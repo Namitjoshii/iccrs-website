@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 40% 13%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 40% 13%;
+
+    --primary: 220 45% 20%;
+    --primary-foreground: 40 30% 96%;
+
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 220 40% 13%;
+
+    --muted: 40 15% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 30 60% 45%;
+    --accent-foreground: 40 30% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 85%;
+    --input: 40 20% 85%;
+    --ring: 220 45% 20%;
+
+    --radius: 0.5rem;
+
+    /* ICCR Custom tokens */
+    --sandstone: 43 75% 31%;
+    --copper: 27 52% 46%;
+    --navy: 220 45% 20%;
+    --ivory: 50 33% 97%;
+    --warm-stone: 37 33% 93%;
+    --heritage-gold: 38 70% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 30% 7%;
+    --foreground: 40 20% 90%;
+    --card: 220 30% 10%;
+    --card-foreground: 40 20% 90%;
+    --popover: 220 30% 10%;
+    --popover-foreground: 40 20% 90%;
+    --primary: 40 20% 90%;
+    --primary-foreground: 220 30% 7%;
+    --secondary: 220 25% 14%;
+    --secondary-foreground: 40 20% 90%;
+    --muted: 220 25% 14%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 30 60% 50%;
+    --accent-foreground: 40 30% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 25% 16%;
+    --input: 220 25% 16%;
+    --ring: 38 70% 50%;
+
+    --warm-stone: 220 25% 10%;
+    --navy: 220 35% 12%;
+    --ivory: 220 30% 8%;
+
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 38 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 14%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 220 25% 16%;
+    --sidebar-ring: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-header {
+    background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--sandstone)) 60%, hsl(var(--copper)) 100%);
+  }
+
+  .gradient-footer {
+    background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--sandstone)) 70%, hsl(var(--copper)) 100%);
+  }
+
+  .glass-card {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--heritage-gold)), hsl(var(--copper)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .ornament-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--heritage-gold) / 0.4), transparent);
+  }
+
+  .card-editorial {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.25rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-editorial:hover {
+    box-shadow: 0 24px 64px -16px hsl(var(--navy) / 0.12), 0 0 0 1px hsl(var(--heritage-gold) / 0.15);
+    transform: translateY(-6px);
+  }
+
+  .card-luxe {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px -4px hsl(var(--navy) / 0.06), 0 1px 3px hsl(var(--navy) / 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-luxe:hover {
+    box-shadow: 0 20px 60px -12px hsl(var(--navy) / 0.15), 0 4px 12px hsl(var(--heritage-gold) / 0.08);
+    transform: translateY(-4px);
+    border-color: hsl(var(--heritage-gold) / 0.3);
+  }
+
+  .section-pattern {
+    background-image: radial-gradient(hsl(var(--accent) / 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Grain overlay */
+  .grain-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 128px 128px;
+    z-index: 1;
+  }
+
+  .dark .grain-overlay::after {
+    opacity: 0.06;
+  }
+
+  /* Editorial heading */
+  .heading-editorial {
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+  }
+
+  /* Horizontal rule accent */
+  .hr-accent {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--heritage-gold) / 0.4), transparent);
+    border: none;
+  }
+}
+
+/* Ken Burns animation */
+@keyframes kenburns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.08) translate(-1%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+
+.animate-kenburns {
+  animation: kenburns 20s ease-in-out infinite;
+}
