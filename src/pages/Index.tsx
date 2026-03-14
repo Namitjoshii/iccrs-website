@@ -4,8 +4,8 @@ import HeroSlider from "@/components/HeroSlider";
 import SectionReveal from "@/components/SectionReveal";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import krishnaImg from "@/assets/krishna-program.jpg";
-import ramaImg from "@/assets/rama-program.jpg";
+import krishnaImg from "@/assets/krishna-program-new.jpg";
+import ramaImg from "@/assets/rama-program-new.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import hero5 from "@/assets/hero-5.jpg";
 import CinematicIntro from "@/components/CinematicIntro";
@@ -53,11 +53,13 @@ const timelineItems = [
 ];
 
 export default function Index() {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(sessionStorage.getItem("introPlayed") !== "true");
 
   return (
     <div className="min-h-screen bg-background">
-      {showIntro && <CinematicIntro onComplete={() => setShowIntro(false)} />}
+      {showIntro && <CinematicIntro onComplete={() => { setShowIntro(false); sessionStorage.setItem("introPlayed", "true");
+
+      }} />}
       <Header />
       <HeroSlider />
 
@@ -72,9 +74,9 @@ export default function Index() {
     <div className="grid lg:grid-cols-12">
 
       {/* Left column */}
-      <div className="lg:col-span-7 py-24 lg:py-36">
+      <div className="lg:col-span-7 py-24 lg:py-36 flex justify-start">
 
-        <div className="max-w-xl">
+        <div className="max-w-xl lg:ml-6">
 
           {/* Section label */}
           <span className="text-[11px] font-semibold tracking-[0.35em] uppercase text-accent mb-6 block">
@@ -82,7 +84,7 @@ export default function Index() {
           </span>
 
           {/* Heading */}
-          <h2 className="font-serif text-4xl lg:text-[3.3rem] leading-[1.15] font-bold text-foreground mb-8">
+          <h2 className="font-serif text-4xl lg:text-[3.3rem] leading-[1.1] font-bold text-foreground mb-8">
             Bridging Civilisational
             <br />
             Wisdom with Modern
@@ -127,16 +129,16 @@ export default function Index() {
 
         </div>
       </div>
-              <div className="hidden lg:block lg:col-span-5 relative">
-                <div className="absolute inset-0 overflow-hidden">
-                  <img
-                    src={hero3}
-                    alt="Varanasi ghats"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
-                </div>
-              </div>
+              <div className="hidden lg:block lg:col-span-5 relative -mr-[calc((100vw-100%)/2)]">
+  <div className="absolute inset-0">
+    <img
+      src={hero3}
+      alt="Varanasi ghats"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+  </div>
+</div>
             </div>
           </div>
         </section>

@@ -1,6 +1,9 @@
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+
+
+
 // Particle component for ambient effects
 const Particle = ({ delay, x, y, size }: { delay: number; x: number; y: number; size: number }) => (
   <motion.div
@@ -176,7 +179,7 @@ const Arrow = ({ phase }: { phase: "ready" | "shooting" | "done" }) => (
   <motion.div
     className="absolute"
     style={{
-      left: "50%",
+      left: "30%",
       top: "50%",
       transformOrigin: "center center",
     }}
@@ -203,7 +206,7 @@ const Arrow = ({ phase }: { phase: "ready" | "shooting" | "done" }) => (
         </linearGradient>
       </defs>
       {/* Arrow shaft */}
-      <rect x="0" y="6.5" width="165" height="3" rx="1.5" fill="url(#arrowGrad)" />
+      <rect x="" y="6.5" width="165" height="3" rx="1.5" fill="url(#arrowGrad)" />
       {/* Arrow head */}
       <polygon points="165,0 200,8 165,16" fill="hsl(42,90%,65%)" />
       {/* Feathers */}
@@ -326,19 +329,18 @@ export default function CinematicIntro({ onComplete }: { onComplete: () => void 
             )}
           </motion.div>
 
-          {/* Begin button */}
-          {phase === "idle" && (
-            <motion.button
-              className="absolute z-20 rounded-full border border-[hsla(38,70%,55%,0.3)] bg-[hsla(38,70%,50%,0.08)] backdrop-blur-sm px-10 py-3.5 text-sm font-semibold tracking-[0.2em] uppercase text-[hsl(38,70%,65%)] hover:bg-[hsla(38,70%,50%,0.15)] hover:border-[hsla(38,70%,55%,0.5)] hover:shadow-[0_0_30px_hsla(38,70%,50%,0.15)] transition-all duration-500 cursor-pointer"
-              style={{ bottom: "18%" }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-              onClick={handleBegin}
-            >
-              Begin
-            </motion.button>
-          )}
+        {/* Begin button */}
+{phase === "idle" && (
+  <motion.button
+    className="absolute bottom-[10%] lg:bottom-[14%] z-20 rounded-full border border-[hsla(38,70%,55%,0.3)] bg-[hsla(38,70%,50%,0.08)] backdrop-blur-sm px-10 py-3.5 text-sm font-semibold tracking-[0.2em] uppercase text-[hsl(38,70%,65%)] hover:bg-[hsla(38,70%,50%,0.15)] hover:border-[hsla(38,70%,55%,0.5)] hover:shadow-[0_0_30px_hsla(38,70%,50%,0.15)] transition-all duration-500 cursor-pointer"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+    onClick={handleBegin}
+  >
+    Begin
+  </motion.button>
+)}
 
           {/* Light burst */}
           {(phase === "burst" || phase === "reveal") && (

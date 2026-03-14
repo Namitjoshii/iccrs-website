@@ -45,7 +45,7 @@ export default function Header() {
             alt="ICCRS Logo"
             className={`transition-all duration-500 rounded shadow-sm ${scrolled ? "h-9" : "h-12"}`}
           />
-          <div className="hidden sm:block">
+          <div className="block leading-tight">
             <h1
               className={`font-serif font-semibold tracking-wide transition-all duration-500 ${
                 scrolled ? "text-sm text-foreground" : "text-base lg:text-lg text-white"

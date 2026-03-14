@@ -9,16 +9,31 @@ import hero5 from "@/assets/hero-5.jpg";
 import hero6 from "@/assets/hero-6.jpg";
 import hero7 from "@/assets/hero-7.jpg";
 import hero8 from "@/assets/hero-8.jpg";
+import newhero1 from "@/assets/new-hero-1.png";
+import newhero2 from "@/assets/new-hero-2.png";
+import newhero3 from "@/assets/new-hero-3.png";
+import newhero4 from "@/assets/new-hero-4.png";
+import newhero5 from "@/assets/new-hero-5.png";
+import newhero6 from "@/assets/new-hero-6.png";
+import newhero7 from "@/assets/new-hero-7.jpg";
+import newhero8 from "@/assets/new-hero-8.jpg";
+import newhero9 from "@/assets/new-hero-9.jpg";
+import newhero10 from "@/assets/new-hero-10.png";
+import newhero11 from "@/assets/new/new-hero-11.png";
+
+
 
 const slides = [
-  { src: hero1, label: "Kashmir" },
-  { src: hero2, label: "Agra" },
-  { src: hero3, label: "Varanasi" },
-  { src: hero4, label: "Rajasthan" },
-  { src: hero5, label: "Kerala" },
-  { src: hero6, label: "Adiyogi" },
-  { src: hero7, label: "Red Fort" },
-  { src: hero8, label: "Kanyakumari" },
+  { src: newhero1, label: "Kashmir" },
+  { src: newhero2, label: "Agra" },
+  { src: hero3, label: "Kanyakumari" },
+  { src: newhero3, label: "Varanasi" },
+  { src: newhero4, label: "Rajasthan" },
+  { src: newhero5, label: "Kerala" },
+  { src: hero2, label: "Adiyogi" },
+  { src: newhero7, label: "Red Fort" },
+  { src: newhero8, label: "Kanyakumari" },
+  { src: newhero10, label: "Kanyakumari" },
 ];
 
 export default function HeroSlider() {
