@@ -54,7 +54,7 @@ export default function RamasLeadership() {
               </h1>
 
               <p className="text-white/75 text-lg lg:text-xl leading-relaxed max-w-3xl">
-                2-Day In-Person Executive Learning + Ayodhya Reflection Visit
+                2-Day In-Person Executive Learning + Ayodhya Cultural Visit
               </p>
 
             </div>
@@ -78,17 +78,14 @@ export default function RamasLeadership() {
 
               <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground leading-[1.9] text-base lg:text-lg">
 
-                <p>
-                  This executive program explores leadership, governance, and ethical decision-making through the leadership ideals embodied by Lord Rama in the Ramayana. The program presents Rama's leadership philosophy as a framework for understanding responsible governance, institutional integrity, and principled decision-making.
-                </p>
+               <p>
+                
+The Executive Program in Leadership, Public Policy and Global Governance equips leaders to navigate complex global governance and policy challenges with strategic vision and ethical insight. 
 
-                <p>
-                  Designed for professionals from government, academia, law, and corporate leadership, the program connects classical Indian governance traditions with contemporary public policy challenges. Participants engage in case-based discussions, collaborative dialogue, and practical frameworks that translate ancient wisdom into modern leadership insights.
-                </p>
+               </p>
+               <p>The program integrates leadership, public policy, and India’s governance traditions to develop skills in decision-making, collaboration, crisis management, and effective communication, preparing participants to lead organizations, institutions, and governments in a rapidly changing world.</p>
 
-                <p>
-                  The program concludes with a reflection visit to Ayodhya, allowing participants to connect leadership lessons from the Ramayana with India's civilizational heritage and governance traditions.
-                </p>
+                <p>Drawing inspiration from classical texts such as the Ramayana and leadership ideals exemplified by Lord Rama, the course provides a unique Indian perspective on responsible governance, institutional leadership, and sustainable policy innovation.</p>
 
               </div>
 
@@ -165,7 +162,7 @@ export default function RamasLeadership() {
                   </h3>
 
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    2 days of in-person executive sessions followed by an Ayodhya Reflection Visit.
+                    2 days of in-person executive sessions followed by an Ayodhya Cultural Visit.
                   </p>
 
                 </div>
@@ -222,7 +219,7 @@ export default function RamasLeadership() {
                   </h3>
 
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    <strong>USD 599</strong> — Includes accommodation, meals during the program, airport transfers, program materials, certificate, and a curated Ayodhya reflection visit.
+                    <strong>USD 599</strong> — Includes accommodation, meals during the program, airport transfers, program materials, certificate, and a curated Ayodhya Cultural visit.
                   </p>
 
                 </div>
@@ -233,10 +230,9 @@ export default function RamasLeadership() {
               <SectionReveal delay={400}>
 
                 <div className="rounded-xl border border-border bg-card p-7 shadow-sm h-full">
-
                   <Users className="h-7 w-7 text-accent mb-4" />
 
-                  <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
                     Batch Size
                   </h3>
 
@@ -245,11 +241,9 @@ export default function RamasLeadership() {
                   </p>
 
                   <p className="text-xs text-muted-foreground mt-2">
-                    A curated cohort of 25–30 participants to ensure meaningful dialogue and peer learning.
+                    A carefully curated cohort of 25–30 participants to ensure meaningful dialogue and peer learning.
                   </p>
-
                 </div>
-
               </SectionReveal>
 
 

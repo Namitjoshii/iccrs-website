@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, Instagram, FacebookIcon,X} from "lucide-react";
 
 const XIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -16,7 +16,11 @@ const navLinks = [
 
 const socialLinks = [
  
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/institute-of-civilisational-cultural-religious-studies/", label: "LinkedIn" },
+  { icon: Instagram, href: "#", label: "LinkedIn" },
+  { icon: FacebookIcon, href: "#", label: "LinkedIn" },
+  { icon: XIcon, href: "#", label: "LinkedIn" },
+
 ];
 
 export default function Footer() {
@@ -35,9 +39,10 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           {/* About */}
           <div>
-            <h4 className="font-serif text-2xl font-semibold mb-2">ICCRS</h4>
+            <h4 className="font-serif text-2xl font-semibold mb-2">ICCR
+            </h4>
             <p className="text-heritage-gold text-xs tracking-[0.15em] uppercase font-medium mb-4">
-              Institute of Civilisation, Culture & Religious Studies
+              Institute of Civilisational & Cultural Relations
             </p>
             <p className="text-white/65 leading-relaxed text-sm">
               A platform for civilisational dialogue, cultural understanding, and institutional collaboration
@@ -107,7 +112,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/40 tracking-wide">
-          © {new Date().getFullYear()} Institute of Civilisation, Culture & Religious Studies. All rights reserved.
+          © {new Date().getFullYear()} Institute of Civilisational, Culture & Religious Studies. All rights reserved.
         </div>
       </div>
     </footer>

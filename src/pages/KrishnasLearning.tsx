@@ -42,7 +42,7 @@ export default function KrishnasLearning() {
                 Global Executive Program in Diplomacy, Strategy, and Crisis Management
               </h1>
               <p className="text-white/75 text-lg lg:text-xl leading-relaxed max-w-3xl">
-                2-Day In-Person Executive Learning + Kurukshetra Reflection Visit
+                2-Day In-Person Executive Learning + Kurukshetra Cultural Visit
               </p>
             </div>
           </SectionReveal>
@@ -106,7 +106,7 @@ export default function KrishnasLearning() {
                   <BookOpen className="h-7 w-7 text-accent mb-4" />
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Program Format</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    2 days of in-person executive sessions followed by a Kurukshetra Reflection Visit.
+                    2 days of in-person executive sessions followed by a Kurukshetra cultural Visit.
                   </p>
                 </div>
               </SectionReveal>
@@ -137,18 +137,23 @@ export default function KrishnasLearning() {
                   </p>
                 </div>
               </SectionReveal>
-              <SectionReveal delay={400}>
-                <div className="rounded-xl border border-border bg-card p-7 shadow-sm h-full">
-                  <Users className="h-7 w-7 text-accent mb-4" />
-                  <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Batch Size</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Limited Seats | Invitation & Application-Based Selection
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    A carefully curated cohort of 25–30 participants for meaningful discussions and rich peer learning.
-                  </p>
-                </div>
-              </SectionReveal>
+            <SectionReveal delay={400}>
+  <div className="rounded-xl border border-border bg-card p-7 shadow-sm h-full">
+    <Users className="h-7 w-7 text-accent mb-4" />
+
+    <h3 className="text-lg font-semibold text-foreground mb-2">
+      Batch Size
+    </h3>
+
+    <p className="text-sm text-muted-foreground leading-relaxed">
+      Limited Seats | Invitation & Application-Based Selection
+    </p>
+
+    <p className="text-xs text-muted-foreground mt-2">
+      A carefully curated cohort of 25–30 participants for meaningful discussions and rich peer learning.
+    </p>
+  </div>
+</SectionReveal>
               <SectionReveal delay={500}>
                 <div className="rounded-xl border border-border bg-card p-7 shadow-sm h-full">
                   <Calendar className="h-7 w-7 text-accent mb-4" />

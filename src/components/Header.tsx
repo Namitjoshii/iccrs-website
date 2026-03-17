@@ -51,14 +51,14 @@ export default function Header() {
                 scrolled ? "text-sm text-foreground" : "text-base lg:text-lg text-white"
               }`}
             >
-              ICCRS
+              ICCR
             </h1>
             <p
               className={`transition-all duration-500 ${
                 scrolled ? "text-[10px] text-muted-foreground" : "text-xs text-white/70"
               }`}
             >
-              Institute of Civilisation, Culture & Religious Studies
+              Institute of Civilisational & Cultural Relations
             </p>
           </div>
         </div>

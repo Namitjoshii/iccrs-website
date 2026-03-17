@@ -19,20 +19,19 @@ import newhero7 from "@/assets/new-hero-7.jpg";
 import newhero8 from "@/assets/new-hero-8.jpg";
 import newhero9 from "@/assets/new-hero-9.jpg";
 import newhero10 from "@/assets/new-hero-10.png";
-import newhero11 from "@/assets/new/new-hero-11.png";
+import newhero11 from "@/assets/new-hero-11.png";
 
 
 
 const slides = [
   { src: newhero1, label: "Kashmir" },
-  { src: newhero2, label: "Agra" },
-  { src: hero3, label: "Kanyakumari" },
-  { src: newhero3, label: "Varanasi" },
+  { src: hero2, label: "Agra" },
+  { src: newhero8, label: "Kanyakumari" },
+  { src: newhero11, label: "Varanasi" },
   { src: newhero4, label: "Rajasthan" },
   { src: newhero5, label: "Kerala" },
-  { src: hero2, label: "Adiyogi" },
-  { src: newhero7, label: "Red Fort" },
-  { src: newhero8, label: "Kanyakumari" },
+  { src: newhero2, label: "Red Fort" },
+  { src: newhero7, label: "Kanyakumari" },
   { src: newhero10, label: "Kanyakumari" },
 ];
 
