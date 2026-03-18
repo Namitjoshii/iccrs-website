@@ -308,63 +308,61 @@ export default function Index() {
       </div>
 
       {/* RIGHT */}
-      <div className="lg:col-span-7 max-w-2xl">
+<div className="lg:col-span-7 max-w-2xl font-sans">
 
-        <div className="space-y-7 text-[1.05rem] leading-[1.9] text-background/70">
+  <div className="space-y-7 text-[1.05rem] leading-[1.9] text-background/70">
+    <p>
+      Culture and religion continue to shape public policy,
+      diplomacy, and social outcomes across regions often
+      implicitly rather than by design.
+    </p>
 
-          <p>
-            Culture and religion continue to shape public policy,
-            diplomacy, and social outcomes across regions often
-            implicitly rather than by design.
-          </p>
+    <p>
+      This Conclave convenes policymakers, diplomats,
+      scholars, and institutional practitioners to explore
+      how civilizational traditions, cultural frameworks,
+      and religious ideas influence governance, trade,
+      diplomacy, international engagement, and coexistence.
+    </p>
 
-          <p>
-            This Conclave convenes policymakers, diplomats,
-            scholars, and institutional practitioners to explore
-            how civilizational traditions, cultural frameworks,
-            and religious ideas influence governance, trade,
-            diplomacy, international engagement, and coexistence.
-          </p>
+    <p>
+      The platform brings together diplomats, scholars,
+      religious and cultural leaders, and global experts
+      to exchange insights, foster collaboration, and
+      examine civilizational perspectives.
+    </p>
+  </div>
 
-          <p>
-            The platform brings together diplomats, scholars,
-            religious and cultural leaders, and global experts
-            to exchange insights, foster collaboration, and
-            examine civilizational perspectives.
-          </p>
+  {/* schedule block */}
+  <div className="mt-12 pt-8 border-t border-background/10 flex flex-col sm:flex-row gap-10">
 
-        </div>
+    <div>
+      <span className="text-[11px] tracking-[0.3em] uppercase text-heritage-gold font-semibold block mb-2">
+        Schedule
+      </span>
+      <p className="text-background/80 text-sm">
+        August - September 2027
+      </p>
+    </div>
 
-        {/* schedule block */}
-        <div className="mt-12 pt-8 border-t border-background/10 flex flex-col sm:flex-row gap-10">
+    <div>
+      <span className="text-[11px] tracking-[0.3em] uppercase text-heritage-gold font-semibold block mb-2">
+        Venue
+      </span>
+      <p className="text-background/80 text-sm">
+        India International Centre
+      </p>
+    </div>
 
-          <div>
-            <span className="text-[11px] tracking-[0.3em] uppercase text-heritage-gold font-semibold block mb-2">
-              Schedule
-            </span>
-            <p className="text-background/80 text-sm">
-              August - September 2027
-            </p>
-          </div>
+  </div>
 
-          <div>
-            <span className="text-[11px] tracking-[0.3em] uppercase text-heritage-gold font-semibold block mb-2">
-              Venue
-            </span>
-            <p className="text-background/80 text-sm">
-              India International Centre
-            </p>
-          </div>
+  <p className=" text-background/40 text-sm mt-8">
+    ICCR invites contributions, speaker proposals,
+    and institutional partnerships to help shape this
+    evidence-based, dialogue-driven forum.
+  </p>
 
-        </div>
-
-        <p className="italic text-background/40 text-sm mt-8">
-          ICCR invites contributions, speaker proposals,
-          and institutional partnerships to help shape this
-          evidence-based, dialogue-driven forum.
-        </p>
-
-      </div>
+</div>
 
     </div>
 
