@@ -350,7 +350,7 @@ export default function Index() {
         Venue
       </span>
       <p className="text-background/80 text-sm">
-        India International Centre
+        India International Centre, Delhi, India
       </p>
     </div>
 

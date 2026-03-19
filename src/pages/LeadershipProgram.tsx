@@ -219,7 +219,7 @@ The Executive Program in Leadership, Public Policy and Global Governance equips 
                   </h3>
 
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    <strong>USD 599</strong> — Includes accommodation, meals during the program, airport transfers, program materials, certificate, and a curated Ayodhya Cultural visit.
+                    <strong>USD 599</strong> — Includes accommodation, breakfast, lunch on two program days, airport pick and drop, program materials, certificate, and a curated visit to Ayodhya for experiential learning.
                   </p>
 
                 </div>
