@@ -3,6 +3,9 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import logo from "@/assets/logo.png";
 import ThemeToggle from "@/components/ThemeToggle";
+import updatedlogo from "@/assets/logo-updated.jpeg";
+import updatedlogocrop from "@/assets/logo-updated-crop.jpg";
+import updatedlogocropnotext from "@/assets/logo-updated-crop-notext.jpg";
 
 const navLinks = [
   { label: "Background & Vision", href: "#background" },
@@ -41,7 +44,7 @@ export default function Header() {
         {/* Logo & Name */}
         <div className="flex items-center gap-3">
           <img
-            src={logo}
+            src={updatedlogocropnotext}
             alt="ICCRS Logo"
             className={`transition-all duration-500 rounded shadow-sm ${scrolled ? "h-9" : "h-12"}`}
           />

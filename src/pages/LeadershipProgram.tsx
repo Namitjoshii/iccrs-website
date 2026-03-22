@@ -6,7 +6,7 @@ import SectionReveal from "@/components/SectionReveal";
 import { ArrowLeft, BookOpen, Users, Calendar, Award, MapPin, GraduationCap } from "lucide-react";
 
 const GOOGLE_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdaSIj1Ky6L9TSxzYGhMVvM8WqK4YhOiVfhjgYOEw7mrmsuUA/viewform?usp=sharing&ouid=103365739546291456692";
+  "https://forms.gle/CGwhfLheHfucVXkD6";
 
 const whoCanAttend = [
   "Government and public sector officials navigating complex governance challenges",

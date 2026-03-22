@@ -86,7 +86,7 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-heritage-gold/10 transition-colors">
                   <Phone className="h-3.5 w-3.5 shrink-0" />
                 </div>
-                +91-8979888817
+                +91-9958900817
               </a>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/40 tracking-wide">
-          © {new Date().getFullYear()} Institute of Civilisational, Culture & Religious Studies. All rights reserved.
+          © {new Date().getFullYear()} Institute of Civilisational & Cultural Relations. All rights reserved.
         </div>
       </div>
     </footer>
