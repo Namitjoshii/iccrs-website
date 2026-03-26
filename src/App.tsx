@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import KrishnasLearning from "./pages/KrishnasLearning";
 import LeadershipProgram from "./pages/LeadershipProgram";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "@/pages/privacypolicy";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/programs/krishnas-learning" element={<KrishnasLearning />} />
             <Route path="/programs/leadership" element={<LeadershipProgram />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

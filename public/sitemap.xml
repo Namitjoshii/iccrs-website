@@ -20,6 +20,10 @@
 <url>
 <loc>https://iccrglobal.org/programs</loc>
 <priority>0.8</priority>
+</url> 
+
+<url>
+  <loc>https://iccrglobal.org/privacy-policy</loc>
 </url>
 
 </urlset>

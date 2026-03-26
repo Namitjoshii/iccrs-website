@@ -12,6 +12,7 @@ const navLinks = [
   { label: "What We Do", href: "#what-we-do" },
   { label: "Events & Dialogue", href: "#events" },
   { label: "Collaboration", href: "#collaboration" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const socialLinks = [
@@ -24,9 +25,13 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const handleClick = (href: string) => {
+ const handleClick = (href: string) => {
+  if (href.startsWith("#")) {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-  };
+  } else {
+    window.location.href = href;
+  }
+};
 
   return (
     <footer className="gradient-footer text-white relative overflow-hidden" id="contact">
