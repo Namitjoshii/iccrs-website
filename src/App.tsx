@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import KrishnasLearning from "./pages/KrishnasLearning";
 import LeadershipProgram from "./pages/LeadershipProgram";
 import NotFound from "./pages/NotFound";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import PrivacyPolicy from "@/pages/Policy";
 
 const queryClient = new QueryClient();
 
