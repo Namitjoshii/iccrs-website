@@ -30,11 +30,11 @@ export default function ApplyNowPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-md px-4"
+      className="fixed inset-0 z-[9999] flex items-start md:items-center justify-center bg-black/50 backdrop-blur-md px-4 py-6"
       onClick={close}
     >
       <div
-        className={`relative w-full max-w-5xl rounded-2xl bg-[#F5F0E8] p-4 md:p-6 shadow-2xl ${
+        className={`relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl bg-[#F5F0E8] p-4 md:p-6 shadow-2xl ${
           closing ? "animate-fadeOut" : "animate-fadeIn"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -60,7 +60,7 @@ export default function ApplyNowPopup() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
           {/* RAMA */}
-          <div className="relative rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
+          <div className="relative rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl">
 
             <span className="absolute -top-3 left-5 text-xs bg-red-500 px-3 py-1 rounded-full shadow-md">
               Limited Seats – Filling Fast
@@ -107,7 +107,7 @@ export default function ApplyNowPopup() {
           </div>
 
           {/* KRISHNA */}
-          <div className="rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
+          <div className="rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl">
 
             <p className="text-xs text-blue-400 tracking-widest mb-2">
               KRISHNA
@@ -167,12 +167,19 @@ export default function ApplyNowPopup() {
           from { opacity: 0; transform: scale(0.95); }
           to { opacity: 1; transform: scale(1); }
         }
+
         @keyframes fadeOut {
           from { opacity: 1; transform: scale(1); }
           to { opacity: 0; transform: scale(0.95); }
         }
-        .animate-fadeIn { animation: fadeIn 0.3s ease forwards; }
-        .animate-fadeOut { animation: fadeOut 0.25s ease forwards; }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease forwards;
+        }
+
+        .animate-fadeOut {
+          animation: fadeOut 0.25s ease forwards;
+        }
       `}</style>
     </div>
   );
