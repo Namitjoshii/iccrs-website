@@ -30,11 +30,11 @@ export default function ApplyNowPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-md"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-md px-4"
       onClick={close}
     >
       <div
-        className={`relative w-[95%] max-w-5xl rounded-2xl bg-[#F5F0E8] p-6 shadow-2xl ${
+        className={`relative w-full max-w-5xl rounded-2xl bg-[#F5F0E8] p-4 md:p-6 shadow-2xl ${
           closing ? "animate-fadeOut" : "animate-fadeIn"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -42,7 +42,7 @@ export default function ApplyNowPopup() {
         {/* Close */}
         <button
           onClick={close}
-          className="absolute top-4 right-5 text-black/60 hover:text-black text-xl"
+          className="absolute top-3 right-4 text-black/60 hover:text-black text-xl"
         >
           ✕
         </button>
@@ -52,17 +52,16 @@ export default function ApplyNowPopup() {
           EXECUTIVE PROGRAMS
         </p>
 
-        <h2 className="text-2xl font-semibold text-center mb-6">
+        <h2 className="text-xl md:text-2xl font-semibold text-center mb-4 md:mb-6">
           Choose Your Program
         </h2>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
-          {/* 🔥 RAMA */}
-          <div className="relative rounded-2xl p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
+          {/* RAMA */}
+          <div className="relative rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
 
-            {/* Tag */}
             <span className="absolute -top-3 left-5 text-xs bg-red-500 px-3 py-1 rounded-full shadow-md">
               Limited Seats – Filling Fast
             </span>
@@ -81,17 +80,17 @@ export default function ApplyNowPopup() {
               USD 599
             </p>
 
-            <div className="space-y-3 mb-6 text-sm">
+            <div className="space-y-2 mb-5 text-sm">
               <p>🎯 Ethical Leadership</p>
               <p>📊 Public Policy Frameworks</p>
               <p>🏛 Governance & Decision Making</p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 to="/programs/leadership"
                 onClick={close}
-                className="w-1/2 text-center border border-[#C8922A] text-[#C8922A] py-2 rounded-lg text-sm hover:bg-[#C8922A]/10"
+                className="w-full sm:w-1/2 text-center border border-[#C8922A] text-[#C8922A] py-2 rounded-lg text-sm hover:bg-[#C8922A]/10"
               >
                 View Details
               </Link>
@@ -100,15 +99,15 @@ export default function ApplyNowPopup() {
                 href="https://forms.gle/CGwhfLheHfucVXkD6"
                 target="_blank"
                 onClick={close}
-                className="w-1/2 text-center bg-[#C8922A] text-white py-2 rounded-lg text-sm hover:opacity-90"
+                className="w-full sm:w-1/2 text-center bg-[#C8922A] text-white py-2 rounded-lg text-sm hover:opacity-90"
               >
                 Apply Now
               </a>
             </div>
           </div>
 
-          {/* 🔵 KRISHNA */}
-          <div className="rounded-2xl p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
+          {/* KRISHNA */}
+          <div className="rounded-2xl p-4 md:p-6 bg-gradient-to-br from-[#2b2b2b] to-[#1a1a1a] text-white shadow-xl hover:scale-[1.02] transition-all duration-300">
 
             <p className="text-xs text-blue-400 tracking-widest mb-2">
               KRISHNA
@@ -126,17 +125,17 @@ export default function ApplyNowPopup() {
               USD 599
             </p>
 
-            <div className="space-y-3 mb-6 text-sm">
+            <div className="space-y-2 mb-5 text-sm">
               <p>🧠 Diplomacy & Crisis Management</p>
               <p>⚔ Mahabharata Case Studies</p>
               <p>👥 25–30 Participants</p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 to="/programs/krishnas-learning"
                 onClick={close}
-                className="w-1/2 text-center border border-blue-400 text-blue-400 py-2 rounded-lg text-sm hover:bg-blue-400/10"
+                className="w-full sm:w-1/2 text-center border border-blue-400 text-blue-400 py-2 rounded-lg text-sm hover:bg-blue-400/10"
               >
                 View Details
               </Link>
@@ -145,7 +144,7 @@ export default function ApplyNowPopup() {
                 href="https://forms.gle/CGwhfLheHfucVXkD6"
                 target="_blank"
                 onClick={close}
-                className="w-1/2 text-center bg-[#1a2744] text-white py-2 rounded-lg text-sm hover:opacity-90"
+                className="w-full sm:w-1/2 text-center bg-[#1a2744] text-white py-2 rounded-lg text-sm hover:opacity-90"
               >
                 Apply Now
               </a>
@@ -163,7 +162,6 @@ export default function ApplyNowPopup() {
         </p>
       </div>
 
-      {/* Animations */}
       <style>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: scale(0.95); }
