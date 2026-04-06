@@ -9,16 +9,20 @@ import KrishnasLearning from "./pages/KrishnasLearning";
 import LeadershipProgram from "./pages/LeadershipProgram";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import ApplyNowPopup from "./components/ApplyNowPopup";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+  <>
+   
   <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
+        <ApplyNowPopup /> 
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/programs/krishnas-learning" element={<KrishnasLearning />} />
@@ -31,6 +35,7 @@ const App = () => (
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>
+  </>
 );
 
 export default App;
