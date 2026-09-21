@@ -260,7 +260,7 @@ The Executive Program in Leadership, Public Policy and Global Governance equips 
                   <div className="text-sm text-muted-foreground leading-relaxed">
 
                     <p>
-                      <strong>Cohort 1</strong> – Sept/Oct 2026 — Applications Open
+                      <strong>Cohort 1</strong> – April 2027 — Applications Open
                     </p>
 
                   </div>

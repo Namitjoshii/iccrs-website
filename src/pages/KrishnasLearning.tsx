@@ -159,7 +159,7 @@ export default function KrishnasLearning() {
                   <Calendar className="h-7 w-7 text-accent mb-4" />
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Tentative Dates</h3>
                   <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
-                     <p><strong>Cohort 1</strong> – February/March 2027 — Applications Open</p>
+                     <p><strong>Cohort 1</strong> – November 2027 — Applications Open</p>
                   </div>
                 </div>
               </SectionReveal>

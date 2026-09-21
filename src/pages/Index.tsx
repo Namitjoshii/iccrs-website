@@ -341,7 +341,7 @@ export default function Index() {
         Schedule
       </span>
       <p className="text-background/80 text-sm">
-        August - September 2027
+        August - September 2026
       </p>
     </div>
 
