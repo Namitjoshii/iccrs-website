@@ -64,10 +64,10 @@ export default function Index() {
           <div className="space-y-7 text-muted-foreground text-[1.05rem] leading-[1.85]">
 
             <p className="first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:text-accent first-letter:mr-2 first-letter:float-left first-letter:leading-[0.9]">
-              India is one of the world's oldest living civilisations, home to diverse religious traditions,
+              India is one of the world's oldest living civilisations, home to diverse traditions,
               cultural philosophies, and intellectual systems that have shaped societies for millennia.
-              Yet India lacks a single consolidated Institute of National Importance exclusively dedicated to
-              Civilisation, Culture, and Religious Studies.
+              Yet India lacks a single consolidated Institute of National Importance exclusively dedicated to 
+              the study of civilisation, culture, and heritage.
             </p>
 
             <p>
@@ -341,7 +341,7 @@ export default function Index() {
         Schedule
       </span>
       <p className="text-background/80 text-sm">
-        August - September 2026
+        August - September 2027
       </p>
     </div>
 
