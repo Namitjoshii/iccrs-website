@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Events & Dialogue", href: "#events" },
   { label: "Collaboration", href: "#collaboration" },
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Advisory Board", href:"/AdvisoryBoard"},
 ];
 
 const socialLinks = [

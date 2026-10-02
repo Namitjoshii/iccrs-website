@@ -10,6 +10,7 @@ import LeadershipProgram from "./pages/LeadershipProgram";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import ApplyNowPopup from "./components/ApplyNowPopup";
+import AdvisoryBoard from "./pages/AdvisoryBoard";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/programs/krishnas-learning" element={<KrishnasLearning />} />
             <Route path="/programs/leadership" element={<LeadershipProgram />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/AdvisoryBoard" element={<AdvisoryBoard/>}/>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

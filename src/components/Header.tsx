@@ -14,6 +14,8 @@ const navLinks = [
   { label: "Events & Dialogue", href: "#events" },
   { label: "Collaboration", href: "#collaboration" },
   { label: "Contact", href: "#contact" },
+  { label: "Advisory Board", href:"/AdvisoryBoard"},
+
 ];
 
 export default function Header() {
@@ -26,10 +28,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleClick = (href: string) => {
+    const handleClick = (href: string) => {
     setOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = href;
+    }
   };
 
   return (
