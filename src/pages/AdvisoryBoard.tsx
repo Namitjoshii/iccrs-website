@@ -2,32 +2,49 @@ import { useEffect } from "react";
 import FirstAdv from "@/assets/FirstAdv.jpeg";
 import SecondAdv from "@/assets/SecondAdv.jpeg";
 import ThirdAdv from "@/assets/ThirdAdv.jpeg";
+import FourthAdv from "@/assets/FourthAdv.jpg";
 
 type Member = {
   id: number;
   name: string;
   photo: string;
-  organisation: string;
+  details: string[];
 };
 
 const members: Member[] = [
   {
     id: 1,
-    name: "Prof. Amar",
+    name: "Prof. A. D. Amar, Ph.D.",
     photo: FirstAdv,
-    organisation: "Seton Hall University",
+    details: ["Seton Hall University", "USA"],
   },
   {
     id: 2,
-    name: "Prof. S. K. Jain",
+    name: "Prof. Sudhir K. Jain",
     photo: SecondAdv,
-    organisation: "IIT Delhi",
+    details: [
+      "Former Vice Chancellor",
+      "Shri Mata Vaishno Devi University, Jammu, India",
+      "Former Head – DMS, IIT Delhi",
+    ],
   },
   {
     id: 3,
-    name: "Dr. Garima Tiwari",
+    name: "Prof. Garima Tiwari",
     photo: ThirdAdv,
-    organisation: "National Law University",
+    details: [
+      "National Law University, Delhi",
+      "PhD – University of Camerino, Italy",
+    ],
+  },
+  {
+    id: 4,
+    name: "Prof. Suman Rani",
+    photo: FourthAdv,
+    details: [
+      "O. P. Jindal Global University, India",
+      "Fulbright Scholar – University of Notre Dame, USA",
+    ],
   },
 ];
 
@@ -50,11 +67,11 @@ body {
   position: relative;
   isolation: isolate;
   min-height: 100svh;
-  padding: clamp(48px, 7vw, 76px) clamp(16px, 4vw, 24px) clamp(56px, 8vw, 88px);
+  padding: clamp(44px, 7vw, 76px) clamp(14px, 4vw, 24px) clamp(52px, 8vw, 88px);
   font-family: var(--aab-sans);
 }
 
-/* Orange block-print pattern — screen ke saath fixed, isliye neeche khali nahi dikhta */
+/* Orange block-print pattern — screen ke saath fixed */
 .aab::before {
   content: "";
   position: fixed;
@@ -68,7 +85,7 @@ body {
   pointer-events: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 128 128'><g fill='none' stroke='%23d9793f' stroke-width='1.1'><g transform='translate(64 64)'><g><path d='M0 -22 q9 11 0 22 q-9 -11 0 -22'/><path d='M0 22 q9 -11 0 -22 q-9 11 0 22'/><path d='M-22 0 q11 9 22 0 q-11 -9 -22 0'/><path d='M22 0 q-11 9 -22 0 q11 -9 22 0'/></g><g transform='rotate(45)'><path d='M0 -16 q6 8 0 16 q-6 -8 0 -16'/><path d='M0 16 q6 -8 0 -16 q-6 8 0 16'/><path d='M-16 0 q8 6 16 0 q-8 -6 -16 0'/><path d='M16 0 q-8 6 -16 0 q8 -6 16 0'/></g><circle r='3'/></g><circle cx='0' cy='0' r='4'/><circle cx='128' cy='0' r='4'/><circle cx='0' cy='128' r='4'/><circle cx='128' cy='128' r='4'/><path d='M0 64 h18 M110 64 h18 M64 0 v18 M64 110 v18'/></g></svg>");
   background-repeat: repeat;
-  background-size: clamp(88px, 11vw, 128px) clamp(88px, 11vw, 128px);
+  background-size: clamp(84px, 11vw, 128px) clamp(84px, 11vw, 128px);
 }
 
 /* Halka parda, taaki pattern text ke peeche se dab jaye */
@@ -81,13 +98,13 @@ body {
   background: radial-gradient(
     ellipse at 50% 38%,
     rgba(253, 249, 243, 0.9) 0%,
-    rgba(253, 249, 243, 0.6) 45%,
-    rgba(253, 249, 243, 0.15) 80%
+    rgba(253, 249, 243, 0.62) 45%,
+    rgba(253, 249, 243, 0.18) 80%
   );
 }
 
 .aab__container {
-  max-width: 900px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -96,11 +113,11 @@ body {
 .aab__head {
   text-align: center;
   max-width: 620px;
-  margin: 0 auto clamp(32px, 5vw, 48px);
+  margin: 0 auto clamp(30px, 5vw, 52px);
 }
 
 .aab__eyebrow {
-  font-size: clamp(9px, 1.6vw, 11px);
+  font-size: clamp(9px, 1.8vw, 11px);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--aab-gold);
@@ -109,7 +126,7 @@ body {
 
 .aab__title {
   font-family: var(--aab-serif);
-  font-size: clamp(28px, 6vw, 48px);
+  font-size: clamp(27px, 6vw, 48px);
   line-height: 1.12;
   font-weight: 700;
   color: var(--aab-ink);
@@ -122,25 +139,25 @@ body {
 }
 
 .aab__tagline {
-  font-size: clamp(13px, 2.2vw, 15px);
+  font-size: clamp(13px, 2.4vw, 15px);
   line-height: 1.6;
   color: var(--aab-body);
   margin: 0;
 }
 
-/* ---------- Teen alag cards ---------- */
+/* ---------- Cards ka grid ---------- */
 
-.aab__list {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(16px, 2.5vw, 22px);
+.aab__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(16px, 2.5vw, 26px);
 }
 
 .aab__card {
   display: flex;
-  align-items: center;
-  gap: clamp(16px, 3vw, 32px);
-  padding: clamp(16px, 3vw, 28px) clamp(18px, 3.5vw, 36px);
+  align-items: flex-start;
+  gap: clamp(14px, 2.2vw, 22px);
+  padding: clamp(14px, 2.4vw, 22px);
   background: rgba(255, 253, 249, 0.92);
   border: 1px solid rgba(192, 142, 51, 0.32);
   box-shadow: 0 4px 24px rgba(20, 38, 60, 0.06);
@@ -154,9 +171,9 @@ body {
 }
 
 .aab__photo-wrap {
-  flex: 0 0 clamp(80px, 13vw, 120px);
-  width: clamp(80px, 13vw, 120px);
-  aspect-ratio: 1 / 1;
+  flex: 0 0 clamp(96px, 13vw, 132px);
+  width: clamp(96px, 13vw, 132px);
+  aspect-ratio: 4 / 5;
   padding: 4px;
   background: #ffffff;
   border: 1px solid rgba(192, 142, 51, 0.4);
@@ -170,64 +187,80 @@ body {
   display: block;
 }
 
-.aab__name {
+.aab__info {
   flex: 1;
   min-width: 0;
+  padding-top: 2px;
+}
+
+.aab__name {
   font-family: var(--aab-serif);
-  font-size: clamp(19px, 3.4vw, 26px);
+  font-size: clamp(17px, 2.4vw, 22px);
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.3;
   color: var(--aab-ink);
-  margin: 0;
+  margin: 0 0 10px;
 }
 
-.aab__org {
-  flex: 0 0 auto;
-  max-width: 240px;
-  text-align: right;
-  font-size: clamp(10px, 1.7vw, 12px);
-  letter-spacing: 0.14em;
-  line-height: 1.7;
-  text-transform: uppercase;
+.aab__name::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--aab-gold);
+  margin-top: 10px;
+}
+
+.aab__detail {
+  font-size: clamp(12px, 1.5vw, 13.5px);
+  line-height: 1.65;
   color: var(--aab-body);
-  margin: 0;
-  padding-left: clamp(14px, 2.5vw, 24px);
-  border-left: 1px solid rgba(192, 142, 51, 0.35);
+  margin: 0 0 4px;
 }
 
-/* Tablet se neeche: organisation naam ke neeche */
-@media (max-width: 720px) {
-  .aab__card {
-    flex-wrap: wrap;
-  }
-  .aab__name {
-    flex: 1 1 140px;
-  }
-  .aab__org {
-    flex: 1 1 100%;
-    max-width: none;
-    text-align: left;
-    padding-left: 0;
-    padding-top: 12px;
-    margin-top: 4px;
-    border-left: 0;
-    border-top: 1px solid rgba(192, 142, 51, 0.35);
-  }
+.aab__detail:last-child {
+  margin-bottom: 0;
 }
 
-/* Chhote phone: photo upar, text neeche */
-@media (max-width: 420px) {
-  .aab__card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+/* Tablet aur chhoti screens: ek column */
+@media (max-width: 860px) {
+  .aab__grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: 0 auto;
   }
   .aab__photo-wrap {
-    flex: none;
-    width: 96px;
+    flex: 0 0 116px;
+    width: 116px;
   }
-  .aab__org {
-    padding-top: 10px;
+  .aab__name {
+    font-size: 19px;
+  }
+  .aab__detail {
+    font-size: 13px;
+  }
+}
+
+/* Chhote phone: thoda aur compact, photo chhoti */
+@media (max-width: 420px) {
+  .aab__card {
+    gap: 14px;
+    padding: 14px;
+  }
+  .aab__photo-wrap {
+    flex: 0 0 92px;
+    width: 92px;
+  }
+  .aab__name {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .aab__name::after {
+    margin-top: 8px;
+  }
+  .aab__detail {
+    font-size: 12.5px;
+    line-height: 1.6;
   }
 }
 `;
@@ -248,7 +281,7 @@ export default function AdvisoryBoard() {
           </p>
 
           <h1 className="aab__title">
-            Our <span className="aab__title-accent">Advisory Board</span>
+            Our <span className="aab__title-accent">Advisory Council</span>
           </h1>
 
           <p className="aab__tagline">
@@ -256,7 +289,7 @@ export default function AdvisoryBoard() {
           </p>
         </header>
 
-        <div className="aab__list">
+        <div className="aab__grid">
           {members.map((member) => (
             <article className="aab__card" key={member.id}>
               <div className="aab__photo-wrap">
@@ -268,9 +301,15 @@ export default function AdvisoryBoard() {
                 />
               </div>
 
-              <h2 className="aab__name">{member.name}</h2>
+              <div className="aab__info">
+                <h2 className="aab__name">{member.name}</h2>
 
-              <p className="aab__org">{member.organisation}</p>
+                {member.details.map((line, i) => (
+                  <p className="aab__detail" key={i}>
+                    {line}
+                  </p>
+                ))}
+              </div>
             </article>
           ))}
         </div>
