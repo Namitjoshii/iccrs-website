@@ -73,7 +73,7 @@ export default function ApplyNowPopup() {
             </h3>
 
             <p className="text-sm text-white/70 mb-4">
-              2-Day Executive Program + Ayodhya Visit
+              5-Day Executive Program + Ayodhya Visit
             </p>
 
             <p className="text-lg font-semibold text-[#C8922A] mb-4">
@@ -118,7 +118,7 @@ export default function ApplyNowPopup() {
             </h3>
 
             <p className="text-sm text-white/70 mb-4">
-              2-Day Executive Program + Kurukshetra Visit
+              5-Day Executive Program + Kurukshetra Visit
             </p>
 
             <p className="text-lg font-semibold text-blue-400 mb-4">

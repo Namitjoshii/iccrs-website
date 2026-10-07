@@ -54,7 +54,7 @@ export default function RamasLeadership() {
               </h1>
 
               <p className="text-white/75 text-lg lg:text-xl leading-relaxed max-w-3xl">
-                2-Day In-Person Executive Learning + Ayodhya Cultural Visit
+                5-Day In-Person Executive Learning + Ayodhya Cultural Visit
               </p>
 
             </div>
@@ -162,7 +162,7 @@ The Executive Program in Leadership, Public Policy and Global Governance equips 
                   </h3>
 
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    2 days of in-person executive sessions followed by an Ayodhya Cultural Visit.
+                    5 days of in-person executive sessions followed by an Ayodhya Cultural Visit.
                   </p>
 
                 </div>

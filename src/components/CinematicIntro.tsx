@@ -146,7 +146,7 @@ const GoldenBow = ({ pullBack }: { pullBack: boolean }) => (
     />
     {/* Bowstring pulled section (two lines to the pull point) */}
     {pullBack && (
-      <>
+      <>[]
         <motion.line
           x1="160"
           y1="30"

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import SectionReveal from "@/components/SectionReveal";
@@ -6,10 +5,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import krishnaImg from "@/assets/krishna-program-new.jpg";
 import ramaImg from "@/assets/rama-program-new.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import hero5 from "@/assets/hero-5.jpg";
 import hero9 from "@/assets/hero-9.jpg";
-import CinematicIntro from "@/components/CinematicIntro";
 import {
   Mail,
   ArrowRight,
@@ -18,13 +14,10 @@ import {
 
 
 export default function Index() {
-  const [showIntro, setShowIntro] = useState(sessionStorage.getItem("introPlayed") !== "true");
+ 
 
   return (
     <div className="min-h-screen bg-background">
-      {showIntro && <CinematicIntro onComplete={() => { setShowIntro(false); sessionStorage.setItem("introPlayed", "true");
-
-      }} />}
       <Header />
       <HeroSlider />
 
@@ -208,7 +201,7 @@ export default function Index() {
       </h3>
 
       <p className="text-muted-foreground leading-[1.85] text-[1.05rem] mb-6">
-        2-days in-person program on Leadership, Public Policy & Global Governance:
+        5-days in-person program on Leadership, Public Policy & Global Governance:
         <p>Drawing insights from Ramayana followed by the Ayodhya cultural visit.</p>
       </p>
 
@@ -248,7 +241,7 @@ export default function Index() {
       </h3>
 
       <p className="text-muted-foreground leading-[1.85] text-[1.05rem] mb-6">
-       2-days in-person program on Diplomacy, Strategy & Crisis Management:
+       5-days in-person program on Diplomacy, Strategy & Crisis Management:
 <p>Drawing insights from the strategic wisdom of Krishna in the Mahabharata, 
   followed by Kurukshetra cultural visit.</p>
       </p>

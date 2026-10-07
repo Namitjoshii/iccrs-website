@@ -42,7 +42,7 @@ export default function KrishnasLearning() {
                 Global Executive Program in Diplomacy, Strategy, and Crisis Management
               </h1>
               <p className="text-white/75 text-lg lg:text-xl leading-relaxed max-w-3xl">
-                2-Day In-Person Executive Learning + Kurukshetra Cultural Visit
+                5-Day In-Person Executive Learning + Kurukshetra Cultural Visit
               </p>
             </div>
           </SectionReveal>
@@ -106,7 +106,7 @@ export default function KrishnasLearning() {
                   <BookOpen className="h-7 w-7 text-accent mb-4" />
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Program Format</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    2 days of in-person executive sessions followed by a Kurukshetra cultural Visit.
+                    5 days of in-person executive sessions followed by a Kurukshetra cultural Visit.
                   </p>
                 </div>
               </SectionReveal>
